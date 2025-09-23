@@ -88,7 +88,7 @@ class GeminiService {
     };
 
     const prompt = `
-    Tạo ${questionCount} câu hỏi trắc nghiệm về tư tưởng Hồ Chí Minh "Nhà nước xã hội chủ nghĩa".
+    Tạo ${questionCount} câu hỏi trắc nghiệm về "Nhà nước xã hội chủ nghĩa".
     
     Độ khó: ${difficultyMap[difficulty]}
     

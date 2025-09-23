@@ -183,7 +183,7 @@ Hãy trả lời một cách thấu đáo và giáo dục!`;
       id: generateId(),
       role: "assistant",
       content:
-        "Cuộc trò chuyện đã được xóa. Hãy đặt câu hỏi mới về tư tưởng Hồ Chí Minh nhé!",
+        "Cuộc trò chuyện đã được xóa. Hãy đặt câu hỏi mới về Nhà nước xã hội chủ nghĩa nhé!",
       timestamp: new Date(),
     };
     setMessages([welcomeMessage]);
@@ -290,7 +290,7 @@ Hãy trả lời một cách thấu đáo và giáo dục!`;
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Đặt câu hỏi về tư tưởng Hồ Chí Minh..."
+            placeholder="Đặt câu hỏi về Nhà nước xã hội chủ nghĩa..."
             rows={isFloatingMode ? 1 : 2}
             disabled={isLoading}
           />

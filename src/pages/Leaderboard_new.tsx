@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { collection, query, getDocs } from 'firebase/firestore';
-import { db } from '../firebase';
-import type { QuizResult } from '../types';
-import './Leaderboard.css';
+import { useState, useEffect } from "react";
+import { collection, query, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
+import type { QuizResult } from "../types";
+import "./Leaderboard.css";
 
 const Leaderboard: React.FC = () => {
   const [leaderboard, setLeaderboard] = useState<QuizResult[]>([]);
@@ -19,9 +19,9 @@ const Leaderboard: React.FC = () => {
       setError(null);
 
       // Lấy tất cả kết quả từ Firestore
-      const q = query(collection(db, 'quizResults'));
+      const q = query(collection(db, "quizResults"));
       const querySnapshot = await getDocs(q);
-      
+
       const results: QuizResult[] = [];
       querySnapshot.forEach((doc) => {
         const data = doc.data();
@@ -32,7 +32,7 @@ const Leaderboard: React.FC = () => {
           totalQuestions: data.totalQuestions,
           timeTaken: data.timeTaken,
           quizDuration: data.quizDuration,
-          timestamp: data.timestamp.toDate()
+          timestamp: data.timestamp.toDate(),
         });
       });
 
@@ -47,8 +47,8 @@ const Leaderboard: React.FC = () => {
       // Chỉ lấy top 10
       setLeaderboard(sortedResults.slice(0, 10));
     } catch (err) {
-      console.error('Lỗi khi tải bảng xếp hạng:', err);
-      setError('Không thể tải bảng xếp hạng. Vui lòng thử lại sau.');
+      console.error("Lỗi khi tải bảng xếp hạng:", err);
+      setError("Không thể tải bảng xếp hạng. Vui lòng thử lại sau.");
     } finally {
       setLoading(false);
     }
@@ -57,16 +57,16 @@ const Leaderboard: React.FC = () => {
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
   const formatDate = (date: Date) => {
-    return date.toLocaleDateString('vi-VN', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
+    return date.toLocaleDateString("vi-VN", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
     });
   };
 
@@ -76,19 +76,27 @@ const Leaderboard: React.FC = () => {
 
   const getRankIcon = (rank: number) => {
     switch (rank) {
-      case 1: return '🥇';
-      case 2: return '🥈';
-      case 3: return '🥉';
-      default: return `#${rank}`;
+      case 1:
+        return "🥇";
+      case 2:
+        return "🥈";
+      case 3:
+        return "🥉";
+      default:
+        return `#${rank}`;
     }
   };
 
   const getRankClass = (rank: number) => {
     switch (rank) {
-      case 1: return 'rank-gold';
-      case 2: return 'rank-silver';
-      case 3: return 'rank-bronze';
-      default: return 'rank-normal';
+      case 1:
+        return "rank-gold";
+      case 2:
+        return "rank-silver";
+      case 3:
+        return "rank-bronze";
+      default:
+        return "rank-normal";
     }
   };
 
@@ -139,7 +147,10 @@ const Leaderboard: React.FC = () => {
           {/* Top 3 Podium */}
           <div className="podium">
             {leaderboard.slice(0, 3).map((result, index) => (
-              <div key={result.id} className={`podium-item ${getRankClass(index + 1)}`}>
+              <div
+                key={result.id}
+                className={`podium-item ${getRankClass(index + 1)}`}
+              >
                 <div className="podium-rank">{getRankIcon(index + 1)}</div>
                 <div className="podium-user">
                   <h3>{result.username}</h3>
@@ -188,9 +199,14 @@ const Leaderboard: React.FC = () => {
                     </td>
                     <td className="percentage-cell">
                       <div className="percentage-bar">
-                        <div 
+                        <div
                           className="percentage-fill"
-                          style={{ width: `${getPercentage(result.score, result.totalQuestions)}%` }}
+                          style={{
+                            width: `${getPercentage(
+                              result.score,
+                              result.totalQuestions
+                            )}%`,
+                          }}
                         ></div>
                         <span className="percentage-text">
                           {getPercentage(result.score, result.totalQuestions)}%
@@ -217,19 +233,32 @@ const Leaderboard: React.FC = () => {
             <div className="stat-item">
               <h4>Điểm trung bình</h4>
               <span>
-                {leaderboard.length > 0 
-                  ? Math.round(leaderboard.reduce((sum, result) => sum + result.score, 0) / leaderboard.length * 10) / 10
-                  : 0
-                } điểm
+                {leaderboard.length > 0
+                  ? Math.round(
+                      (leaderboard.reduce(
+                        (sum, result) => sum + result.score,
+                        0
+                      ) /
+                        leaderboard.length) *
+                        10
+                    ) / 10
+                  : 0}{" "}
+                điểm
               </span>
             </div>
             <div className="stat-item">
               <h4>Thời gian trung bình</h4>
               <span>
-                {leaderboard.length > 0 
-                  ? formatTime(Math.round(leaderboard.reduce((sum, result) => sum + result.timeTaken, 0) / leaderboard.length))
-                  : '0:00'
-                }
+                {leaderboard.length > 0
+                  ? formatTime(
+                      Math.round(
+                        leaderboard.reduce(
+                          (sum, result) => sum + result.timeTaken,
+                          0
+                        ) / leaderboard.length
+                      )
+                    )
+                  : "0:00"}
               </span>
             </div>
           </div>
