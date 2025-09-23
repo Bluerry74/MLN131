@@ -3,123 +3,123 @@ import type { Question } from '../types';
 export const quizQuestions: Question[] = [
   {
     id: '1',
-    question: 'Theo Hồ Chí Minh, nhà nước "của dân" có nghĩa là gì?',
+    question: 'Nhà nước xã hội chủ nghĩa ra đời trên cơ sở nào?',
     options: [
-      'Nhà nước do tư nhân sở hữu',
-      'Nhà nước do quân đội quản lý',
-      'Quyền lực nhà nước thuộc về nhân dân',
-      'Nhà nước thuộc về tầng lớp tinh hoa'
+      'Sự phát triển của lực lượng sản xuất và đấu tranh giai cấp vô sản', // đúng
+      'Do nhu cầu mở rộng lãnh thổ',
+      'Từ sự thoái hóa của nhà nước phong kiến',
+      'Do các tập đoàn kinh tế lập ra'
     ],
-    correctAnswer: 2,
-    explanation: 'Nhà nước "của dân" có nghĩa là quyền lực nhà nước thuộc về nhân dân, nhân dân là chủ thể của quyền lực chính trị.'
+    correctAnswer: 0,
+    explanation: 'Nhà nước XHCN ra đời từ sự phát triển của lực lượng sản xuất và kết quả đấu tranh giai cấp của giai cấp vô sản chống lại giai cấp tư sản.'
   },
   {
     id: '2',
-    question: 'Nhà nước "do dân" thể hiện điều gì?',
+    question: 'Điểm khác biệt cơ bản giữa nhà nước XHCN và nhà nước tư sản là gì?',
     options: [
-      'Nhà nước do nước ngoài điều hành',
-      'Chỉ có giới trí thức mới được tham gia chính trị',
-      'Nhà nước hoạt động độc lập với nhân dân',
-      'Nhân dân trực tiếp tham gia quản lý nhà nước'
+      'Nhà nước XHCN có quân đội mạnh hơn',
+      'Nhà nước XHCN có lãnh thổ rộng lớn hơn',
+      'Nhà nước XHCN tồn tại vĩnh viễn không thay đổi',
+      'Nhà nước XHCN là công cụ chuyên chính của giai cấp công nhân và nhân dân lao động' // đúng
     ],
     correctAnswer: 3,
-    explanation: 'Nhà nước "do dân" thể hiện việc nhân dân trực tiếp tham gia quản lý nhà nước và các cơ quan nhà nước do nhân dân bầu ra.'
+    explanation: 'Khác với nhà nước tư sản là công cụ thống trị của giai cấp tư sản, nhà nước XHCN là công cụ chuyên chính của giai cấp công nhân và nhân dân lao động.'
   },
   {
     id: '3',
-    question: 'Mục tiêu cao nhất của nhà nước "vì dân" là gì?',
+    question: 'Bản chất của nhà nước xã hội chủ nghĩa là gì?',
     options: [
-      'Phục vụ nhân dân',
-      'Tăng cường quyền lực của nhà nước',
-      'Mở rộng lãnh thổ',
-      'Tăng cường quân sự'
+      'Bản chất giai cấp tư sản',
+      'Bản chất giai cấp công nhân, đồng thời mang tính nhân dân rộng rãi và tính dân tộc sâu sắc', // đúng
+      'Bản chất quân phiệt',
+      'Bản chất phong kiến'
     ],
-    correctAnswer: 0,
-    explanation: 'Nhà nước "vì dân" có mục tiêu cao nhất là phục vụ nhân dân, mọi hoạt động của nhà nước đều vì lợi ích của nhân dân.'
+    correctAnswer: 1,
+    explanation: 'Nhà nước XHCN vừa mang bản chất giai cấp công nhân, vừa thể hiện tính nhân dân và tính dân tộc sâu sắc.'
   },
   {
     id: '4',
-    question: 'Tư tưởng "của dân, do dân, vì dân" của Hồ Chí Minh thể hiện điều gì?',
+    question: 'Chức năng đối nội chủ yếu của nhà nước XHCN là gì?',
     options: [
-      'Tính chuyên quyền của nhà nước',
-      'Sự phân biệt giai cấp',
-      'Bản chất dân chủ sâu sắc',
-      'Quyền lực tập trung'
+      'Bảo vệ lợi ích của tầng lớp thống trị cũ',
+      'Tổ chức xây dựng nền dân chủ XHCN và phát triển kinh tế - xã hội', // đúng
+      'Mở rộng quan hệ ngoại giao',
+      'Chỉ tập trung phát triển quân sự'
     ],
-    correctAnswer: 2,
-    explanation: 'Tư tưởng này thể hiện rõ tinh thần dân chủ sâu sắc và tình yêu thương vô bờ bến đối với nhân dân của Hồ Chí Minh.'
+    correctAnswer: 1,
+    explanation: 'Đối nội, nhà nước XHCN có chức năng tổ chức xây dựng nền dân chủ XHCN, phát triển kinh tế, văn hóa, xã hội vì lợi ích nhân dân.'
   },
   {
     id: '5',
-    question: 'Cán bộ, công chức trong nhà nước "do dân" phải như thế nào?',
+    question: 'Chức năng đối ngoại của nhà nước XHCN là gì?',
     options: [
-      'Chỉ cần có trình độ cao',
-      'Xuất thân từ nhân dân và phục vụ nhân dân',
-      'Phải là người nước ngoài',
-      'Chỉ cần trung thành với lãnh đạo'
+      'Mở rộng quan hệ hợp tác quốc tế, bảo vệ Tổ quốc XHCN', // đúng
+      'Xâm chiếm lãnh thổ các nước khác',
+      'Khép kín không giao lưu',
+      'Chỉ tập trung cho kinh tế trong nước'
     ],
-    correctAnswer: 1,
-    explanation: 'Trong nhà nước "do dân", cán bộ, công chức phải xuất thân từ nhân dân và phục vụ nhân dân.'
+    correctAnswer: 0,
+    explanation: 'Chức năng đối ngoại của nhà nước XHCN là mở rộng quan hệ hợp tác quốc tế, đồng thời bảo vệ Tổ quốc và chế độ XHCN.'
   },
   {
     id: '6',
-    question: 'Ý nghĩa của tư tưởng "của dân, do dân, vì dân" đối với Việt Nam hiện nay?',
+    question: 'Dân chủ xã hội chủ nghĩa giữ vai trò gì đối với nhà nước XHCN?',
     options: [
-      'Chỉ có ý nghĩa lịch sử',
-      'Không còn phù hợp',
-      'Chỉ áp dụng trong thời kỳ kháng chiến',
-      'Làm nền tảng xây dựng nhà nước pháp quyền xã hội chủ nghĩa'
+      'Không có liên quan',
+      'Chỉ phục vụ một nhóm nhỏ',
+      'Chỉ là hình thức chính trị tạm thời',
+      'Là bản chất và nền tảng để xây dựng nhà nước XHCN' // đúng
     ],
     correctAnswer: 3,
-    explanation: 'Tư tưởng này làm nền tảng cho việc xây dựng nhà nước pháp quyền xã hội chủ nghĩa và định hướng cải cách hành chính.'
+    explanation: 'Dân chủ XHCN là bản chất, là nền tảng để xây dựng và phát huy vai trò của nhà nước XHCN.'
   },
   {
     id: '7',
-    question: 'Quyền lực trong nhà nước "của dân" xuất phát từ đâu?',
+    question: 'Mối quan hệ giữa dân chủ XHCN và nhà nước XHCN thể hiện như thế nào?',
     options: [
-      'Từ nhân dân và vì lợi ích của nhân dân',
-      'Từ các tổ chức quốc tế',
-      'Từ các tập đoàn kinh tế',
-      'Từ truyền thống lịch sử'
+      'Dân chủ XHCN là mục tiêu, còn nhà nước XHCN là công cụ thực hiện', // đúng
+      'Nhà nước XHCN thay thế hoàn toàn dân chủ',
+      'Dân chủ XHCN chỉ tồn tại khi không có nhà nước',
+      'Hai khái niệm này hoàn toàn tách biệt'
     ],
     correctAnswer: 0,
-    explanation: 'Trong nhà nước "của dân", mọi quyền lực đều xuất phát từ nhân dân và vì lợi ích của nhân dân.'
+    explanation: 'Dân chủ XHCN là mục tiêu, còn nhà nước XHCN là công cụ để thực hiện và bảo vệ nền dân chủ ấy.'
   },
   {
     id: '8',
-    question: 'Nhà nước "vì dân" bảo vệ điều gì?',
+    question: 'Trong quá trình xây dựng CNXH, nhà nước XHCN có vai trò gì?',
     options: [
-      'Chỉ bảo vệ lợi ích của nhà nước',
-      'Chỉ bảo vệ người giàu',
-      'Chỉ bảo vệ cán bộ lãnh đạo',
-      'Các quyền cơ bản của công dân'
+      'Đóng vai trò thứ yếu',
+      'Tổ chức, quản lý, định hướng phát triển kinh tế - xã hội theo định hướng XHCN', // đúng
+      'Chỉ giám sát và không tham gia quản lý',
+      'Lùi lại nhường chỗ cho thị trường'
     ],
-    correctAnswer: 3,
-    explanation: 'Nhà nước "vì dân" có nhiệm vụ bảo vệ và thực hiện các quyền cơ bản của công dân.'
+    correctAnswer: 1,
+    explanation: 'Nhà nước XHCN giữ vai trò tổ chức, quản lý, định hướng sự phát triển kinh tế - xã hội theo mục tiêu XHCN.'
   },
   {
     id: '9',
-    question: 'Đặc điểm nổi bật của tư tưởng chính trị Hồ Chí Minh là gì?',
+    question: 'Tại sao nói nhà nước XHCN vừa mang bản chất giai cấp, vừa mang tính nhân dân rộng rãi?',
     options: [
-      'Tính dân tộc hẹp hòi',
-      'Tính bảo thủ',
-      'Tính cá nhân',
-      'Tính dân chủ và tình yêu thương nhân dân'
+      'Vì do giai cấp công nhân lãnh đạo nhưng phục vụ lợi ích của toàn dân lao động', // đúng
+      'Vì không liên quan đến nhân dân',
+      'Vì chỉ phục vụ lợi ích giai cấp công nhân',
+      'Vì chỉ dựa vào một đảng chính trị duy nhất'
     ],
-    correctAnswer: 3,
-    explanation: 'Đặc điểm nổi bật là tính dân chủ sâu sắc và tình yêu thương vô bờ bến đối với nhân dân.'
+    correctAnswer: 0,
+    explanation: 'Nhà nước XHCN là công cụ của giai cấp công nhân nhưng đồng thời phục vụ lợi ích chung của nhân dân lao động.'
   },
   {
     id: '10',
-    question: 'Tư tưởng "của dân, do dân, vì dân" định hướng cho việc gì?',
+    question: 'Mối quan hệ giữa nhà nước XHCN và quyền làm chủ của nhân dân thể hiện ra sao?',
     options: [
-      'Xây dựng quân đội hùng mạnh',
-      'Phát triển công nghiệp nặng',
-      'Cải cách hành chính và xây dựng chính quyền trong sạch',
-      'Mở rộng quan hệ ngoại giao'
+      'Quyền làm chủ của nhân dân tách biệt với nhà nước',
+      'Nhà nước XHCN chỉ bảo vệ quyền của lãnh đạo',
+      'Nhà nước XHCN là hình thức tổ chức để nhân dân thực hiện quyền làm chủ', // đúng
+      'Nhà nước XHCN hạn chế quyền làm chủ của nhân dân'
     ],
     correctAnswer: 2,
-    explanation: 'Tư tưởng này định hướng cho việc cải cách hành chính và xây dựng chính quyền trong sạch, vì dân.'
+    explanation: 'Nhà nước XHCN chính là hình thức tổ chức chính trị - pháp lý để nhân dân thực hiện quyền làm chủ của mình.'
   }
 ];
 

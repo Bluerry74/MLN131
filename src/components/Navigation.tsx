@@ -21,7 +21,7 @@ const Navigation: React.FC = () => {
         <div className="icon-container">
           <BookOpen className="book-icon" />
         </div>
-        <h1 className="nav-title">Tư Tưởng Hồ Chí Minh</h1>
+        <h1 className="nav-title">Chủ Nghĩa Xã Hội Khoa Học</h1>
 
         {/* Mobile Menu Button */}
         <button

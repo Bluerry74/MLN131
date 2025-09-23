@@ -19,7 +19,7 @@ const AIChatbot: React.FC<AIChatbotProps> = ({ isFloatingMode = false }) => {
       id: "1",
       role: "assistant",
       content:
-        'Xin chào! Tôi là trợ lý AI chuyên về tư tưởng Hồ Chí Minh. Tôi có thể giúp bạn trả lời các câu hỏi liên quan đến bài học "Nhà nước xã hội chủ nghĩa". Hãy đặt câu hỏi cho tôi nhé!',
+        'Xin chào! Tôi là trợ lý AI chuyên về Chủ nghĩa xã hội khoa học . Tôi có thể giúp bạn trả lời các câu hỏi liên quan đến bài học "Nhà nước xã hội chủ nghĩa". Hãy đặt câu hỏi cho tôi nhé!',
       timestamp: new Date(),
     };
     setMessages([welcomeMessage]);
@@ -66,7 +66,7 @@ const AIChatbot: React.FC<AIChatbotProps> = ({ isFloatingMode = false }) => {
 
     try {
       // Tạo prompt hạn chế phạm vi trả lời cho Gemini
-      const systemPrompt = `Bạn là một giáo sư chuyên về tư tưởng Hồ Chí Minh và lịch sử Việt Nam, đặc biệt am hiểu sâu sắc về chủ đề "Nhà nước xã hội chủ nghĩa". 
+      const systemPrompt = `Bạn là một giáo sư chuyên Chủ nghĩa xã hội khoa học, đặc biệt am hiểu sâu sắc về chủ đề "Nhà nước xã hội chủ nghĩa". 
 
 NHIỆM VỤ: Hãy trả lời chi tiết, đầy đủ và có chiều sâu về các câu hỏi liên quan đến:
 
@@ -197,11 +197,12 @@ Hãy trả lời một cách thấu đáo và giáo dục!`;
   };
 
   const suggestedQuestions = [
-    'Nhà nước "của dân" có nghĩa là gì?',
-    'Sự khác biệt giữa "do dân" và "vì dân" là gì?',
-    "Tại sao Hồ Chí Minh lại nhấn mạnh về vai trò của nhân dân?",
-    "Tư tưởng này có ý nghĩa gì với Việt Nam hiện nay?",
-    "Làm thế nào để xây dựng chính quyền phục vụ nhân dân?",
+    "Nhà nước xã hội chủ nghĩa ra đời trong bối cảnh nào?",
+    "Bản chất của nhà nước xã hội chủ nghĩa là gì?",
+    "Chức năng chính của nhà nước xã hội chủ nghĩa là gì?",
+    "Nhà nước xã hội chủ nghĩa có những đặc điểm gì nổi bật?",
+    "Mối quan hệ giữa dân chủ xã hội chủ nghĩa và nhà nước xã hội chủ nghĩa là gì?",
+    "Cơ sở để xây dựng nhà nước xã hội chủ nghĩa là gì?",
   ];
 
   return (
@@ -212,7 +213,7 @@ Hãy trả lời một cách thấu đáo và giáo dục!`;
         <div className="chatbot-header">
           <h1>
             <Bot size={24} />
-            Trợ Lý AI - Tư Tưởng Hồ Chí Minh
+            Trợ Lý AI - CHủ Nghĩa Xã Hội Khoa Học
           </h1>
           <div className="header-actions">
             <button className="clear-button" onClick={clearChat}>

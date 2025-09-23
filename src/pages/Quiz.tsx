@@ -258,7 +258,7 @@ const Quiz: React.FC = () => {
           <div className="loading-animation">
             <h1>🤖 Đang tạo câu hỏi AI</h1>
             <p className="quiz-description">
-              Vui lòng đợi trong giây lát, AI đang tạo {5} câu hỏi về tư tưởng Hồ Chí Minh với mức độ {difficulty === 'easy' ? 'Dễ' : difficulty === 'medium' ? 'Trung bình' : 'Khó'}...
+              Vui lòng đợi trong giây lát, AI đang tạo {5} câu hỏi về chủ đề "Nhà nước xã hội chủ nghĩa" với mức độ {difficulty === 'easy' ? 'Dễ' : difficulty === 'medium' ? 'Trung bình' : 'Khó'}...
             </p>
             <div className="spinner"></div>
             <p>Đang xử lý...</p>
@@ -278,8 +278,8 @@ const Quiz: React.FC = () => {
           <h1>Kiểm Tra Kiến Thức</h1>
           <p className="quiz-description">
             {quizMode === 'ai' 
-              ? `Thử thách bản thân với ${questionCount} câu hỏi được tạo bởi AI về tư tưởng Hồ Chí Minh.`
-              : `Bài kiểm tra gồm ${questionCount} câu hỏi trắc nghiệm về tư tưởng Hồ Chí Minh.`}
+              ? `Thử thách bản thân với ${questionCount} câu hỏi được tạo bởi AI về "Nhà nước xã hội chủ nghĩa".`
+              : `Bài kiểm tra gồm ${questionCount} câu hỏi trắc nghiệm về Nhà nước xã hội chủ nghĩa.`}
           </p>
           
           {/* Quiz Mode Selection */}
