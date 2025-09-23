@@ -86,8 +86,8 @@ const Leaderboard: React.FC = () => {
         return a.timeSpent - b.timeSpent;
       });
 
-      setNormalLeaderboard(sortedNormal.slice(0, 10));
-      setAILeaderboard(sortedAI.slice(0, 10));
+      setNormalLeaderboard(sortedNormal.slice(0, 20));
+      setAILeaderboard(sortedAI.slice(0, 20));
     } catch (err) {
       console.error("Error loading leaderboards:", err);
       setError("Không thể tải bảng xếp hạng. Vui lòng thử lại sau.");
@@ -143,6 +143,7 @@ const Leaderboard: React.FC = () => {
   };
 
   const getCurrentLeaderboard = () => {
+    console.log(aiLeaderboard.length);
     return activeTab === "normal"
       ? normalLeaderboard
           .filter((result) => {
