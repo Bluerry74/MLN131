@@ -191,7 +191,6 @@ Yêu cầu:
             "Chức năng đối ngoại của nhà nước XHCN là mở rộng quan hệ hợp tác quốc tế, đồng thời bảo vệ Tổ quốc và chế độ XHCN.",
         },
         {
-          id: "6",
           question:
             "Dân chủ xã hội chủ nghĩa giữ vai trò gì đối với nhà nước XHCN?",
           options: [
@@ -200,7 +199,7 @@ Yêu cầu:
             "Chỉ là hình thức chính trị tạm thời",
             "Là bản chất và nền tảng để xây dựng nhà nước XHCN", // đúng
           ],
-          correctAnswer: 3,
+          correct: 3,
           explanation:
             "Dân chủ XHCN là bản chất, là nền tảng để xây dựng và phát huy vai trò của nhà nước XHCN.",
         },
