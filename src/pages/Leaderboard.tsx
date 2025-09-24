@@ -196,6 +196,18 @@ const Leaderboard: React.FC = () => {
 
   return (
     <div className="leaderboard-container">
+      <div className="particle-container">
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+      </div>
       <div className="leaderboard-header">
         <h1>🏆 Bảng Xếp Hạng</h1>
         <p className="leaderboard-description">

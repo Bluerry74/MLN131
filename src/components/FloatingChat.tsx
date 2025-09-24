@@ -3,7 +3,7 @@ import AIChatbot from '../pages/AIChatbot';
 import './FloatingChat.css';
 
 const FloatingChat: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
